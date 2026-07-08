@@ -1,0 +1,386 @@
+html {
+  background: #eef3f1;
+}
+
+body {
+  color: #17201b;
+  background:
+    linear-gradient(135deg, rgba(251, 253, 252, 0.96) 0%, rgba(238, 243, 241, 0.94) 58%, rgba(224, 232, 229, 0.96) 100%),
+    repeating-linear-gradient(90deg, rgba(31, 107, 87, 0.04) 0, rgba(31, 107, 87, 0.04) 1px, transparent 1px, transparent 6.5rem);
+}
+
+.pelagia-logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.pelagia-wordmark-img {
+  display: block;
+  width: 11.5rem;
+  height: auto;
+}
+
+.prose :where(.pelagia-home) {
+  max-width: none;
+}
+
+.prose :where(.pelagia-home h1, .pelagia-home h2, .pelagia-home h3, .pelagia-home p) {
+  margin-top: 0;
+}
+
+.pelagia-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(21rem, 0.9fr);
+  gap: clamp(2rem, 6vw, 5.5rem);
+  align-items: center;
+  min-height: min(72vh, 45rem);
+  padding: clamp(2rem, 6vw, 5rem) 0 clamp(2.5rem, 7vw, 5.5rem);
+}
+
+.pelagia-kicker {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 1.25rem;
+  border: 1px solid #b8c9c3;
+  border-radius: 999px;
+  padding: 0.28rem 0.72rem;
+  color: #1f463c;
+  background: #fbfdfc;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.pelagia-hero h1 {
+  max-width: 12ch;
+  color: #17201b;
+  font-size: 5.8rem;
+  line-height: 0.94;
+  letter-spacing: 0;
+}
+
+.pelagia-hero .lead {
+  max-width: 43rem;
+  margin-top: 1.35rem;
+  color: #30443d;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.pelagia-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.pelagia-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  border-radius: 0.38rem;
+  padding: 0.72rem 1.05rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.pelagia-button.primary {
+  color: #ffffff;
+  background: #1f6b57;
+  box-shadow: 0 12px 28px rgba(23, 32, 27, 0.16);
+}
+
+.pelagia-button.primary:hover {
+  background: #195644;
+}
+
+.pelagia-button.secondary {
+  color: #1f463c;
+  border: 1px solid #b8c9c3;
+  background: #ffffff;
+}
+
+.pelagia-button.secondary:hover {
+  background: #e8f1ee;
+}
+
+.pelagia-visual {
+  position: relative;
+  min-height: clamp(25rem, 40vw, 35rem);
+}
+
+.pelagia-ring {
+  position: absolute;
+  inset: 7% 4% 0 5%;
+  border: 1px solid #d0ddd8;
+  border-radius: 50%;
+  background: rgba(251, 253, 252, 0.58);
+}
+
+.pelagia-hero-icon {
+  position: absolute;
+  top: 14%;
+  right: 8%;
+  width: 10rem;
+  height: auto;
+  opacity: 0.08;
+}
+
+.pelagia-panel {
+  position: absolute;
+  width: min(27rem, 94%);
+  border: 1px solid #d0ddd8;
+  border-radius: 0.38rem;
+  background: rgba(251, 253, 252, 0.92);
+  box-shadow: 0 20px 60px rgba(23, 32, 27, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+.pelagia-panel.main {
+  top: 8%;
+  right: 0;
+  padding: 1rem;
+}
+
+.pelagia-panel.signal {
+  bottom: 8%;
+  left: 0;
+  max-width: 20rem;
+  padding: 1rem;
+}
+
+.panel-label {
+  margin-bottom: 0.8rem;
+  color: #60746c;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.pipeline-step,
+.status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+  border-top: 1px solid #e0e8e5;
+  padding: 0.78rem 0;
+  color: #30443d;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.pipeline-step:first-of-type,
+.status-row:first-of-type {
+  border-top: 0;
+}
+
+.pipeline-step span {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+  color: #1f463c;
+  background: #e8f1ee;
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
+.pipeline-step.active span {
+  color: #ffffff;
+  background: #1f6b57;
+}
+
+.status-row strong {
+  flex: 0 0 auto;
+  border-radius: 999px;
+  padding: 0.18rem 0.48rem;
+  color: #1f6b57;
+  background: #e3f3ee;
+  font-size: 0.78rem;
+}
+
+.status-row:nth-of-type(3) strong {
+  color: #72551b;
+  background: #fff1c7;
+}
+
+.pelagia-section {
+  padding: clamp(2.5rem, 7vw, 5rem) 0;
+  border-top: 1px solid rgba(23, 32, 27, 0.1);
+}
+
+.pelagia-section h2 {
+  max-width: 15ch;
+  color: #17201b;
+  font-size: 3.35rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.pelagia-section > p,
+.pelagia-split > p {
+  max-width: 46rem;
+  color: #30443d;
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+.pelagia-grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.7rem;
+}
+
+.pelagia-card {
+  min-height: 15rem;
+  border: 1px solid #d0ddd8;
+  border-radius: 0.38rem;
+  padding: 1.15rem;
+  background: rgba(251, 253, 252, 0.82);
+}
+
+.pelagia-card h3 {
+  color: #1f463c;
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+.pelagia-card p {
+  color: #465950;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.pelagia-split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.pelagia-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.pelagia-metric {
+  border-left: 4px solid #1f6b57;
+  padding-left: 0.9rem;
+}
+
+.pelagia-metric:nth-child(2) {
+  border-left-color: #1c7e99;
+}
+
+.pelagia-metric:nth-child(3) {
+  border-left-color: #cd5c5c;
+}
+
+.pelagia-metric strong {
+  display: block;
+  color: #17201b;
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.pelagia-metric span {
+  display: block;
+  margin-top: 0.45rem;
+  color: #60746c;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.pelagia-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: center;
+  padding: clamp(1.25rem, 4vw, 2.25rem) 0;
+}
+
+.pelagia-cta h2 {
+  max-width: 17ch;
+  margin-bottom: 0.6rem;
+}
+
+.pelagia-cta p {
+  max-width: 44rem;
+  color: #30443d;
+}
+
+.page-simple {
+  max-width: 54rem;
+}
+
+.page-simple .lead {
+  color: #30443d;
+  font-size: 1.22rem;
+  line-height: 1.55;
+}
+
+.page-simple h2 {
+  margin-top: 2.6rem;
+  color: #17201b;
+}
+
+@media (max-width: 900px) {
+  .pelagia-hero,
+  .pelagia-split,
+  .pelagia-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .pelagia-visual {
+    min-height: 27rem;
+  }
+
+  .pelagia-grid-list,
+  .pelagia-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .pelagia-hero h1 {
+    font-size: 4.7rem;
+  }
+
+  .pelagia-section h2 {
+    font-size: 2.85rem;
+  }
+}
+
+@media (max-width: 620px) {
+  body {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .pelagia-wordmark-img {
+    width: 8.75rem;
+  }
+
+  .pelagia-hero h1 {
+    font-size: 3.1rem;
+  }
+
+  .pelagia-hero .lead {
+    font-size: 1.12rem;
+  }
+
+  .pelagia-section h2 {
+    font-size: 2.25rem;
+  }
+
+  .pelagia-panel.main {
+    right: auto;
+    left: 0;
+  }
+}

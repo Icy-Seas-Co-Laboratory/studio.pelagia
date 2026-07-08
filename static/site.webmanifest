@@ -1,0 +1,14 @@
+{
+  "name": "Pelagia",
+  "short_name": "Pelagia",
+  "icons": [
+    {
+      "src": "/brand/pelagia_icon.png",
+      "sizes": "876x890",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#eef3f1",
+  "background_color": "#eef3f1",
+  "display": "standalone"
+}
