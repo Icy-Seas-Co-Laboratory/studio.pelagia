@@ -9,7 +9,7 @@ copyright = "&copy; 2026 Icy Seas Co-Laboratory LLC. Pelagia is a trademark of I
 [params]
   dateFormat = "2 January 2006"
 
-  description = "Pelagia is an ROI-first image-analysis platform for biological video and image data, with a Python backend and the PelagiaView browser interface."
+  description = "Pelagia is an open source analysis server with the PelagiaView web GUI for turning pelagic imagery into usable oceanographic data."
 
 [params.author]
   name = "Pelagia"

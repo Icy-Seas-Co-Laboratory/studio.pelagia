@@ -1,22 +1,22 @@
 ---
 title: "Contact"
-description: "Start a conversation about Pelagia."
+description: "Start a conversation about pelagic imagery analysis with Pelagia."
 ---
 
 <div class="page-simple">
 
-<p class="lead">Tell Pelagia what kind of biological image-analysis workflow you are trying to run.</p>
+<p class="lead">Tell us what pelagic imagery problem you are trying to solve.</p>
 
-The best first note includes the source data shape, approximate frame or ROI volume, the segmentation or labeling task, where the data lives today, and whether you are evaluating the backend, PelagiaView, or a full operational installation.
+The best first note includes the instrument or imagery source, the approximate data volume, the features you need to identify or measure, the review burden today, and the scientific or operational output you need at the end.
 
 Email: [contact@icyseascolab.io](mailto:contact@icyseascolab.io)
 
 ## Useful Context To Share
 
-- The analysis workflow you are exploring.
+- The oceanographic question or monitoring need.
 - The size and type of source videos or image collections.
-- The ROI, mask, measurement, label, or export outputs you need.
-- Whether processing should run locally, on a shared machine, or across workers.
-- Any existing model, plugin, or storage constraints.
+- The organisms, particles, or features of interest.
+- The measurements, labels, quality-control steps, or exports you need.
+- Any existing tools, models, or review workflows you already use.
 
 </div>

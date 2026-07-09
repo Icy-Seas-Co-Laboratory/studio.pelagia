@@ -74,6 +74,10 @@ body {
   margin-top: 2rem;
 }
 
+.pelagia-actions.compact {
+  margin-top: 0;
+}
+
 .pelagia-button {
   display: inline-flex;
   align-items: center;

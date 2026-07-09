@@ -1,83 +1,86 @@
 ---
 title: ""
-description: "Pelagia is an ROI-first image-analysis platform for extracting, segmenting, organizing, labeling, and training models on biological video and image data."
+description: "Pelagia is an open source analysis server with the PelagiaView web GUI for turning pelagic imagery into usable oceanographic data."
 ---
 
 <div class="pelagia-home">
   <section class="pelagia-hero">
     <div>
-      <p class="pelagia-kicker">ROI-first biological image analysis</p>
-      <h1>From source frames to durable ROI data.</h1>
-      <p class="lead">Pelagia extracts, segments, organizes, labels, and trains on biological image data through a Python backend, background workers, reproducible artifacts, and the PelagiaView browser interface.</p>
+      <p class="pelagia-kicker">Pelagic imagery to oceanographic data</p>
+      <h1>See more of the water column.</h1>
+      <p class="lead">Pelagia is an open source analysis server for pelagic imagery. PelagiaView is its web GUI: a high-performance interactive workspace for turning large image collections into measurable, reviewable, analysis-ready records.</p>
       <div class="pelagia-actions">
-        <a class="pelagia-button primary" href="/platform/">Explore the platform</a>
-        <a class="pelagia-button secondary" href="/pelagiaview/">Open the interface story</a>
+        <a class="pelagia-button primary" href="/approach/">Explore the approach</a>
+        <a class="pelagia-button secondary" href="https://demo.pelagia.studio/" rel="noopener noreferrer">Try the demo</a>
       </div>
     </div>
     <div class="pelagia-visual" aria-hidden="true">
       <div class="pelagia-ring"></div>
       <img class="pelagia-hero-icon" src="/brand/pelagia_icon.png" alt="" />
       <div class="pelagia-panel main">
-        <p class="panel-label">Processing pipeline</p>
-        <div class="pipeline-step active"><span>01</span> Ingest video and image assets</div>
-        <div class="pipeline-step"><span>02</span> Extract and preprocess frames</div>
-        <div class="pipeline-step"><span>03</span> Segment candidate ROIs</div>
-        <div class="pipeline-step"><span>04</span> Refine masks and store artifacts</div>
+        <p class="panel-label">Imagery workflow</p>
+        <div class="pipeline-step active"><span>01</span> Import pelagic imagery</div>
+        <div class="pipeline-step"><span>02</span> Identify regions of interest</div>
+        <div class="pipeline-step"><span>03</span> Review organisms and particles</div>
+        <div class="pipeline-step"><span>04</span> Export analysis-ready records</div>
       </div>
       <div class="pelagia-panel signal">
-        <p class="panel-label">Project status</p>
-        <div class="status-row"><span>Preprocessing</span><strong>succeeded</strong></div>
-        <div class="status-row"><span>Candidate ROIs</span><strong>working</strong></div>
-        <div class="status-row"><span>Refinement</span><strong>queued</strong></div>
+        <p class="panel-label">Survey review</p>
+        <div class="status-row"><span>Image context</span><strong>visible</strong></div>
+        <div class="status-row"><span>Candidate targets</span><strong>ready</strong></div>
+        <div class="status-row"><span>Data products</span><strong>pending</strong></div>
       </div>
     </div>
   </section>
 
   <section class="pelagia-section">
-    <h2>Built around the unit scientists actually review.</h2>
-    <p>Large source frames can stay cold while ROI crops, masks, measurements, labels, classifications, and curation state remain available for analysis. Pelagia keeps the durable metadata close to the workflow and moves heavy payloads through replaceable storage adapters.</p>
+    <h2>Built for the scale of modern pelagic imaging.</h2>
+    <p>Optical oceanographic instruments can collect enormous image streams, but scientific value depends on converting those images into trustworthy observations. Pelagia supports the work between raw imagery and quantitative analysis: detection, review, measurement, labeling, quality control, and export.</p>
     <div class="pelagia-grid-list">
       <div class="pelagia-card">
-        <h3>Frame ingestion</h3>
-        <p>Register source assets, extract frames from video or image collections, and preserve geometry, checksums, paths, and collection metadata.</p>
+        <h3>Find signal in volume</h3>
+        <p>Move through large imagery collections by focusing attention on candidate organisms, particles, marine snow, or other features of interest.</p>
       </div>
       <div class="pelagia-card">
-        <h3>Segmentation and refinement</h3>
-        <p>Detect candidate ROIs, store crops and masks, then refine boundaries with learned model artifacts when the workflow needs better masks.</p>
+        <h3>Keep context visible</h3>
+        <p>Review targets with their surrounding image context, masks, measurements, and confidence cues so scientific judgment remains part of the workflow.</p>
       </div>
       <div class="pelagia-card">
-        <h3>Curation-ready outputs</h3>
-        <p>Carry ROI records forward into labeling, classification, embeddings, training-set curation, model evaluation, and robust exports.</p>
+        <h3>Create usable data</h3>
+        <p>Turn reviewed imagery into structured records for abundance workflows, morphology measurements, classification, model training, and downstream analysis.</p>
       </div>
     </div>
   </section>
 
   <section class="pelagia-section pelagia-split">
     <div>
-      <h2>Backend durability, browser operations.</h2>
-      <p>Pelagia owns the database, payload storage, job queue, worker sessions, events, artifacts, and HTTP API. PelagiaView stays thin and operational: connect to a backend, monitor health, queue processing, inspect frames and ROIs, and review logs.</p>
+      <h2>A flexible server and web GUI architecture.</h2>
+      <p>The analysis server and web interface are separate by design. Pelagia can run close to the data and processing resources, while PelagiaView gives scientists an interactive browser workspace for review, quality control, and export. That split makes the suite easier to deploy locally, share across teams, extend with new workflows, and connect to existing oceanographic data systems.</p>
     </div>
     <div class="pelagia-metrics">
       <div class="pelagia-metric">
-        <strong>API</strong>
-        <span>FastAPI routes for system health, assets, frames, detections, jobs, workers, logs, and exports</span>
+        <strong>Server</strong>
+        <span>Open source analysis services for imagery processing, data products, and reproducible workflows</span>
       </div>
       <div class="pelagia-metric">
-        <strong>Jobs</strong>
-        <span>Postgres-backed queue with worker heartbeat, events, pause, resume, retry, and shutdown controls</span>
+        <strong>Web GUI</strong>
+        <span>PelagiaView provides interactive review without requiring every user to run processing locally</span>
       </div>
       <div class="pelagia-metric">
-        <strong>ROIs</strong>
-        <span>Crops, masks, geometry, measurements, labels, model outputs, and curation state as first-class records</span>
+        <strong>Flexible</strong>
+        <span>Deploy for demos, local projects, shared instruments, or larger analysis environments</span>
       </div>
     </div>
   </section>
 
   <section class="pelagia-section pelagia-cta">
     <div>
-      <h2>Run the stack, then open PelagiaView.</h2>
-      <p>Start the backend API and workers, connect PelagiaView to the API endpoint, and operate the analysis pipeline from a project-scoped browser session.</p>
+      <h2>Have pelagic imagery that needs analysis?</h2>
+      <p>Bring the dataset shape, instrument context, review burden, and the scientific output you need. Pelagia is built to make that path more interactive, scalable, and reproducible.</p>
     </div>
-    <a class="pelagia-button primary" href="/operations/">Review operations</a>
+    <div class="pelagia-actions compact">
+      <a class="pelagia-button primary" href="/contact/">Start a conversation</a>
+      <a class="pelagia-button secondary" href="https://github.com/Icy-Seas-Co-Laboratory/Pelagia" rel="noopener noreferrer">View source</a>
+    </div>
   </section>
 </div>

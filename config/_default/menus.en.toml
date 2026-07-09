@@ -11,18 +11,18 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Platform"
-  pageRef = "platform"
+  name = "Approach"
+  pageRef = "approach"
   weight = 10
 
 [[main]]
-  name = "PelagiaView"
-  pageRef = "pelagiaview"
+  name = "Software"
+  pageRef = "software"
   weight = 20
 
 [[main]]
-  name = "Operations"
-  pageRef = "operations"
+  name = "Applications"
+  pageRef = "applications"
   weight = 30
 
 [[main]]
@@ -30,26 +30,50 @@
   pageRef = "contact"
   weight = 40
 
+[[main]]
+  name = "Demo"
+  url = "https://demo.pelagia.studio/"
+  weight = 50
+  [main.params]
+    rel = "noopener noreferrer"
+    target = "_blank"
+
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
 [[footer]]
-  name = "Platform"
-  pageRef = "platform"
+  name = "Approach"
+  pageRef = "approach"
   weight = 10
 
 [[footer]]
-  name = "PelagiaView"
-  pageRef = "pelagiaview"
+  name = "Software"
+  pageRef = "software"
   weight = 20
 
 [[footer]]
-  name = "Operations"
-  pageRef = "operations"
+  name = "Applications"
+  pageRef = "applications"
   weight = 30
+
+[[footer]]
+  name = "Demo"
+  url = "https://demo.pelagia.studio/"
+  weight = 40
+  [footer.params]
+    rel = "noopener noreferrer"
+    target = "_blank"
+
+[[footer]]
+  name = "Source"
+  url = "https://github.com/Icy-Seas-Co-Laboratory/Pelagia"
+  weight = 50
+  [footer.params]
+    rel = "noopener noreferrer"
+    target = "_blank"
 
 [[footer]]
   name = "Privacy"
   pageRef = "privacy"
-  weight = 40
+  weight = 60
