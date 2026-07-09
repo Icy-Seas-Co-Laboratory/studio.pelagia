@@ -1,13 +1,23 @@
 html {
+  height: 100%;
   background: #eef3f1;
 }
 
 body {
+  min-height: 100%;
   color: #17201b;
   font-family: Avenir, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   background:
     linear-gradient(135deg, rgba(251, 253, 252, 0.96) 0%, rgba(238, 243, 241, 0.94) 58%, rgba(224, 232, 229, 0.96) 100%),
     repeating-linear-gradient(90deg, rgba(31, 107, 87, 0.04) 0, rgba(31, 107, 87, 0.04) 1px, transparent 1px, transparent 6.5rem);
+}
+
+body.h-screen {
+  height: auto;
+}
+
+p {
+  font-size: 1.3rem;
 }
 
 .pelagia-logo {
@@ -55,7 +65,7 @@ body {
 .pelagia-hero h1 {
   max-width: 12ch;
   color: #17201b;
-  font-size: 7.25rem;
+  font-size: 5rem;
   line-height: 0.94;
   letter-spacing: 0;
 }
@@ -262,7 +272,7 @@ body {
 .pelagia-section h2 {
   max-width: 15ch;
   color: #17201b;
-  font-size: 4.19rem;
+  font-size: 3.5rem;
   line-height: 1;
   letter-spacing: 0;
 }
@@ -363,6 +373,51 @@ body {
 
 .page-simple {
   max-width: 54rem;
+}
+
+.page-approach {
+  max-width: 76rem;
+}
+
+.approach-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(20rem, 0.8fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.approach-copy {
+  max-width: 54rem;
+}
+
+.approach-copy .lead {
+  color: #30443d;
+  font-size: 1.53rem;
+  line-height: 1.55;
+}
+
+.approach-copy h2 {
+  margin-top: 2.6rem;
+  color: #17201b;
+}
+
+.approach-copy p {
+  color: #30443d;
+}
+
+.approach-workflow {
+  position: sticky;
+  top: 2rem;
+  overflow: hidden;
+  margin: 0;
+  background: transparent;
+}
+
+.approach-workflow img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
 
 .prose :where(.page-work) {
@@ -500,6 +555,7 @@ body {
   .pelagia-split,
   .pelagia-cta,
   .pelagia-showcase,
+  .approach-layout,
   .work-feature,
   .work-image-grid {
     grid-template-columns: 1fr;
@@ -517,15 +573,20 @@ body {
   }
 
   .pelagia-hero h1 {
-    font-size: 5.88rem;
+    font-size: 5rem;
   }
 
   .pelagia-section h2 {
-    font-size: 3.56rem;
+    font-size: 3.5rem;
   }
 
   .work-section h2 {
     font-size: 3.56rem;
+  }
+
+  .approach-workflow {
+    position: static;
+    max-width: 32rem;
   }
 }
 
