@@ -26,6 +26,11 @@
   weight = 30
 
 [[main]]
+  name = "Work"
+  pageRef = "work"
+  weight = 35
+
+[[main]]
   name = "Contact"
   pageRef = "contact"
   weight = 40
@@ -56,6 +61,11 @@
   name = "Applications"
   pageRef = "applications"
   weight = 30
+
+[[footer]]
+  name = "Work"
+  pageRef = "work"
+  weight = 35
 
 [[footer]]
   name = "Demo"

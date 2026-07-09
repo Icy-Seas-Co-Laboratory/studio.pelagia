@@ -7,6 +7,10 @@ description: "Pelagia as an open source analysis server with the PelagiaView web
 
 <p class="lead">Pelagia is the open source analysis server. PelagiaView is the front-end web GUI. Together they give teams a flexible way to process, review, and export pelagic imagery data.</p>
 
+<figure class="pelagia-page-image">
+  <img src="/demo-screenshots/roi_browser-web.jpg" alt="PelagiaView ROI Browser showing filter controls and tiled candidate ROI imagery." />
+</figure>
+
 ## Server And Web GUI
 
 Pelagia handles the analysis side of the workflow: processing imagery, organizing candidate targets, preserving review products, and preparing outputs. PelagiaView connects to that server through the browser so scientists can inspect imagery, review regions of interest, and track progress interactively.
@@ -16,6 +20,10 @@ This architecture keeps the system naturally flexible. The server can run where 
 ## Interactive Review
 
 The software supports fast movement between source imagery, candidate regions, masks, frame context, and review state. That matters for pelagic imagery, where signal can be subtle and confidence often depends on seeing both the cropped target and the surrounding frame.
+
+<figure class="pelagia-page-image">
+  <img src="/demo-screenshots/frame_inspection-web.jpg" alt="PelagiaView frame inspection with detections highlighted on a source frame." />
+</figure>
 
 ## High-Performance Workflow
 

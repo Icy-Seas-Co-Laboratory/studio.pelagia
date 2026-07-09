@@ -4,6 +4,7 @@ html {
 
 body {
   color: #17201b;
+  font-family: Avenir, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   background:
     linear-gradient(135deg, rgba(251, 253, 252, 0.96) 0%, rgba(238, 243, 241, 0.94) 58%, rgba(224, 232, 229, 0.96) 100%),
     repeating-linear-gradient(90deg, rgba(31, 107, 87, 0.04) 0, rgba(31, 107, 87, 0.04) 1px, transparent 1px, transparent 6.5rem);
@@ -17,7 +18,7 @@ body {
 
 .pelagia-wordmark-img {
   display: block;
-  width: 11.5rem;
+  width: 14rem;
   height: auto;
 }
 
@@ -47,14 +48,14 @@ body {
   padding: 0.28rem 0.72rem;
   color: #1f463c;
   background: #fbfdfc;
-  font-size: 0.82rem;
+  font-size: 1.03rem;
   font-weight: 800;
 }
 
 .pelagia-hero h1 {
   max-width: 12ch;
   color: #17201b;
-  font-size: 5.8rem;
+  font-size: 7.25rem;
   line-height: 0.94;
   letter-spacing: 0;
 }
@@ -63,7 +64,7 @@ body {
   max-width: 43rem;
   margin-top: 1.35rem;
   color: #30443d;
-  font-size: 1.3rem;
+  font-size: 1.63rem;
   line-height: 1.5;
 }
 
@@ -154,10 +155,49 @@ body {
   padding: 1rem;
 }
 
+.pelagia-screenshot,
+.pelagia-page-image {
+  overflow: hidden;
+  border: 1px solid #d0ddd8;
+  border-radius: 0.38rem;
+  background: #fbfdfc;
+  box-shadow: 0 20px 60px rgba(23, 32, 27, 0.12);
+}
+
+.pelagia-screenshot img,
+.pelagia-page-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.pelagia-screenshot.hero-shot {
+  position: absolute;
+  top: 8%;
+  right: 0;
+  width: min(31rem, 94%);
+}
+
+.pelagia-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.pelagia-showcase h2 {
+  max-width: 14ch;
+}
+
+.pelagia-page-image {
+  margin: 1.8rem 0 2.4rem;
+}
+
 .panel-label {
   margin-bottom: 0.8rem;
   color: #60746c;
-  font-size: 0.74rem;
+  font-size: 0.93rem;
   font-weight: 800;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -172,7 +212,7 @@ body {
   border-top: 1px solid #e0e8e5;
   padding: 0.78rem 0;
   color: #30443d;
-  font-size: 0.92rem;
+  font-size: 1.15rem;
   line-height: 1.35;
 }
 
@@ -191,7 +231,7 @@ body {
   border-radius: 0.3rem;
   color: #1f463c;
   background: #e8f1ee;
-  font-size: 0.76rem;
+  font-size: 0.95rem;
   font-weight: 900;
 }
 
@@ -206,7 +246,7 @@ body {
   padding: 0.18rem 0.48rem;
   color: #1f6b57;
   background: #e3f3ee;
-  font-size: 0.78rem;
+  font-size: 0.98rem;
 }
 
 .status-row:nth-of-type(3) strong {
@@ -222,7 +262,7 @@ body {
 .pelagia-section h2 {
   max-width: 15ch;
   color: #17201b;
-  font-size: 3.35rem;
+  font-size: 4.19rem;
   line-height: 1;
   letter-spacing: 0;
 }
@@ -231,7 +271,7 @@ body {
 .pelagia-split > p {
   max-width: 46rem;
   color: #30443d;
-  font-size: 1.1rem;
+  font-size: 1.38rem;
   line-height: 1.65;
 }
 
@@ -252,13 +292,13 @@ body {
 
 .pelagia-card h3 {
   color: #1f463c;
-  font-size: 1.15rem;
+  font-size: 1.44rem;
   line-height: 1.25;
 }
 
 .pelagia-card p {
   color: #465950;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.55;
 }
 
@@ -291,7 +331,7 @@ body {
 .pelagia-metric strong {
   display: block;
   color: #17201b;
-  font-size: 1.55rem;
+  font-size: 1.94rem;
   line-height: 1;
 }
 
@@ -299,7 +339,7 @@ body {
   display: block;
   margin-top: 0.45rem;
   color: #60746c;
-  font-size: 0.92rem;
+  font-size: 1.15rem;
   line-height: 1.4;
 }
 
@@ -325,9 +365,13 @@ body {
   max-width: 54rem;
 }
 
+.prose :where(.page-work) {
+  max-width: none;
+}
+
 .page-simple .lead {
   color: #30443d;
-  font-size: 1.22rem;
+  font-size: 1.53rem;
   line-height: 1.55;
 }
 
@@ -336,10 +380,128 @@ body {
   color: #17201b;
 }
 
+.page-work {
+  max-width: 72rem;
+}
+
+.page-work .lead {
+  max-width: 58rem;
+  color: #30443d;
+  font-size: 1.53rem;
+  line-height: 1.55;
+}
+
+.work-section {
+  padding: clamp(2.5rem, 7vw, 5rem) 0;
+  border-top: 1px solid rgba(23, 32, 27, 0.1);
+}
+
+.work-section h2 {
+  max-width: 15ch;
+  margin-top: 0;
+  color: #17201b;
+  font-size: 4.19rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.work-section p {
+  max-width: 47rem;
+  color: #30443d;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.work-feature,
+.work-image-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(20rem, 1.08fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.work-frame,
+.work-roi,
+.work-roi-strip figure {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid #d0ddd8;
+  border-radius: 0.38rem;
+  background: #fbfdfc;
+  box-shadow: 0 20px 60px rgba(23, 32, 27, 0.12);
+}
+
+.work-frame img,
+.work-roi img,
+.work-roi-strip img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.work-frame figcaption,
+.work-roi figcaption {
+  margin: 0;
+  border-top: 1px solid #e0e8e5;
+  padding: 0.72rem 0.85rem;
+  color: #60746c;
+  background: #fbfdfc;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.work-frame.tall {
+  align-self: start;
+}
+
+.work-roi {
+  align-self: center;
+}
+
+.work-image-grid {
+  margin-top: 1.7rem;
+  align-items: start;
+}
+
+.work-roi-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.3fr) minmax(0, 0.95fr);
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.7rem;
+}
+
+.work-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.7rem;
+}
+
+.work-preview-media {
+  position: relative;
+  min-height: 27rem;
+}
+
+.work-preview-media .work-frame {
+  width: min(28rem, 92%);
+}
+
+.work-roi.floating {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(23rem, 72%);
+}
+
 @media (max-width: 900px) {
   .pelagia-hero,
   .pelagia-split,
-  .pelagia-cta {
+  .pelagia-cta,
+  .pelagia-showcase,
+  .work-feature,
+  .work-image-grid {
     grid-template-columns: 1fr;
   }
 
@@ -348,16 +510,22 @@ body {
   }
 
   .pelagia-grid-list,
-  .pelagia-metrics {
+  .pelagia-metrics,
+  .work-card-grid,
+  .work-roi-strip {
     grid-template-columns: 1fr;
   }
 
   .pelagia-hero h1 {
-    font-size: 4.7rem;
+    font-size: 5.88rem;
   }
 
   .pelagia-section h2 {
-    font-size: 2.85rem;
+    font-size: 3.56rem;
+  }
+
+  .work-section h2 {
+    font-size: 3.56rem;
   }
 }
 
@@ -372,19 +540,43 @@ body {
   }
 
   .pelagia-hero h1 {
-    font-size: 3.1rem;
+    font-size: 3.88rem;
   }
 
   .pelagia-hero .lead {
-    font-size: 1.12rem;
+    font-size: 1.4rem;
   }
 
   .pelagia-section h2 {
-    font-size: 2.25rem;
+    font-size: 2.81rem;
+  }
+
+  .work-section h2 {
+    font-size: 2.81rem;
+  }
+
+  .work-preview-media {
+    min-height: auto;
+  }
+
+  .work-preview-media .work-frame,
+  .work-roi.floating {
+    position: static;
+    width: 100%;
+  }
+
+  .work-roi.floating {
+    margin-top: 1rem;
   }
 
   .pelagia-panel.main {
     right: auto;
     left: 0;
+  }
+
+  .pelagia-screenshot.hero-shot {
+    left: 0;
+    right: auto;
+    width: 100%;
   }
 }

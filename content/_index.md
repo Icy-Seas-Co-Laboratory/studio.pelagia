@@ -17,19 +17,43 @@ description: "Pelagia is an open source analysis server with the PelagiaView web
     <div class="pelagia-visual" aria-hidden="true">
       <div class="pelagia-ring"></div>
       <img class="pelagia-hero-icon" src="/brand/pelagia_icon.png" alt="" />
-      <div class="pelagia-panel main">
-        <p class="panel-label">Imagery workflow</p>
-        <div class="pipeline-step active"><span>01</span> Import pelagic imagery</div>
-        <div class="pipeline-step"><span>02</span> Identify regions of interest</div>
-        <div class="pipeline-step"><span>03</span> Review organisms and particles</div>
-        <div class="pipeline-step"><span>04</span> Export analysis-ready records</div>
-      </div>
+      <figure class="pelagia-screenshot hero-shot">
+        <img src="/demo-screenshots/roi_browser-web.jpg" alt="" />
+      </figure>
       <div class="pelagia-panel signal">
         <p class="panel-label">Survey review</p>
         <div class="status-row"><span>Image context</span><strong>visible</strong></div>
         <div class="status-row"><span>Candidate targets</span><strong>ready</strong></div>
         <div class="status-row"><span>Data products</span><strong>pending</strong></div>
       </div>
+    </div>
+  </section>
+
+  <section class="pelagia-section pelagia-showcase">
+    <div>
+      <h2>Review detections in the frame where they were observed.</h2>
+      <p>Pelagic imagery often needs both the cropped target and its surrounding context. PelagiaView supports frame inspection so reviewers can examine candidate regions, nearby particles, scale, masks, and image metadata without losing sight of the original observation.</p>
+    </div>
+    <figure class="pelagia-screenshot">
+      <img src="/demo-screenshots/frame_inspection-web.jpg" alt="PelagiaView frame inspection showing detections overlaid on a source frame with frame metadata." />
+    </figure>
+  </section>
+
+  <section class="pelagia-section pelagia-showcase work-preview">
+    <div>
+      <h2>Built around real pelagic imagery.</h2>
+      <p>Example workflows move from full-frame instrument images to scale-aware regions of interest that can be reviewed, measured, labeled, and exported for downstream oceanographic analysis.</p>
+      <div class="pelagia-actions compact">
+        <a class="pelagia-button secondary" href="/work/">See example work</a>
+      </div>
+    </div>
+    <div class="work-preview-media">
+      <figure class="work-frame">
+        <img src="/example-dpi/plankton-frame-original-web.jpg" alt="Full-frame pelagic image with a candidate plankton organism highlighted." />
+      </figure>
+      <figure class="work-roi floating">
+        <img src="/example-dpi/plankton-roi-horizontal-web.jpg" alt="Cropped plankton region of interest with scale bar." />
+      </figure>
     </div>
   </section>
 
