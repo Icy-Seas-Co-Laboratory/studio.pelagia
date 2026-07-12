@@ -35,7 +35,7 @@ Pelagia uses a Python backend with a FastAPI service layer and a browser-based r
 
 ## Demo And Source
 
-You can explore the hosted demo at [demo.pelagia.studio](https://demo.pelagia.studio/) and review the open source code at [github.com/Icy-Seas-Co-Laboratory/Pelagia](https://github.com/Icy-Seas-Co-Laboratory/Pelagia).
+You can explore the hosted demo at [demo.pelagia.studio](https://demo.pelagia.studio/?server=https%3A%2F%2Fdemoapi.pelagia.studio&username=demo&password=demo) and review the open source code at [github.com/Icy-Seas-Co-Laboratory/Pelagia](https://github.com/Icy-Seas-Co-Laboratory/Pelagia).
 
 ## Built For Pelagic Data
 

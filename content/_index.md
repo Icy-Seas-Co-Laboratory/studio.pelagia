@@ -11,7 +11,7 @@ description: "Pelagia is an open source analysis server with the PelagiaView web
       <p class="lead">Pelagia is an open source analysis server for pelagic imagery. PelagiaView is its web GUI: a high-performance interactive workspace for turning large image collections into measurable, reviewable, analysis-ready records.</p>
       <div class="pelagia-actions">
         <a class="pelagia-button primary" href="/approach/">Explore the approach</a>
-        <a class="pelagia-button secondary" href="https://demo.pelagia.studio/" rel="noopener noreferrer">Try the demo</a>
+        <a class="pelagia-button secondary" href="https://demo.pelagia.studio/?server=https%3A%2F%2Fdemoapi.pelagia.studio&username=demo&password=demo" rel="noopener noreferrer">Try the demo</a>
       </div>
     </div>
     <div class="pelagia-visual" aria-hidden="true">
