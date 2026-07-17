@@ -6,7 +6,13 @@ layout: "simple"
 
 <div class="page-work">
 
-<p class="lead">Pelagia is being developed around real pelagic imaging workflows: finding candidate organisms in full-frame imagery, preserving context for review, and turning regions of interest into data products that can support oceanographic analysis.</p>
+<p class="lead">Pelagia's workflow was shaped by the UAF Deep-Focus Particle Imager operated for the Northern Gulf of Alaska LTER program. A single survey can produce tens of terabytes of coupled imagery and environmental observations—far more than a science team can inspect manually.</p>
+
+<section class="work-section">
+  <p class="pelagia-kicker">Northern Gulf of Alaska LTER</p>
+  <h2>Built through sustained work with the DPI.</h2>
+  <p>Work with Russ Hopcroft's instrument has driven Pelagia's real-time pipeline, interactive review tools, and high-throughput architecture. It is a proving ground for the suite: biologically diverse imagery, demanding field conditions, and the need to preserve the relationship between every image, its sensor context, and the ecological observation it becomes. <a href="/field-study/">Read the full DPI field study.</a></p>
+</section>
 
 <section class="work-section work-feature">
   <div>

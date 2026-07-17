@@ -31,6 +31,11 @@
   weight = 35
 
 [[main]]
+  name = "Field Study"
+  pageRef = "field-study"
+  weight = 37
+
+[[main]]
   name = "Contact"
   pageRef = "contact"
   weight = 40
@@ -66,6 +71,11 @@
   name = "Work"
   pageRef = "work"
   weight = 35
+
+[[footer]]
+  name = "DPI Field Study"
+  pageRef = "field-study"
+  weight = 37
 
 [[footer]]
   name = "Demo"

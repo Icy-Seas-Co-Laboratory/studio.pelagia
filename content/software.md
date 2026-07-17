@@ -1,19 +1,19 @@
 ---
 title: "Software"
-description: "Pelagia as an open source analysis server with the PelagiaView web GUI for pelagic imagery workflows."
+description: "Pelagia is a real-time, high-throughput pelagic image processing and plankton identification suite."
 ---
 
 <div class="page-simple">
 
-<p class="lead">Pelagia is the open source analysis server. PelagiaView is the front-end web GUI. Together they give teams a flexible way to process, review, and export pelagic imagery data.</p>
+<p class="lead">Pelagia is an integrated, real-time pelagic image processing suite. Its processing engine and PelagiaView scientific workspace work together to identify plankton, manage high-throughput imagery, and turn instrument streams into reviewable, analysis-ready data.</p>
 
 <figure class="pelagia-page-image">
   <img src="/demo-screenshots/roi_browser-web.jpg" alt="PelagiaView ROI Browser showing filter controls and tiled candidate ROI imagery." />
 </figure>
 
-## Server And Web GUI
+## A Real-Time Processing Suite
 
-Pelagia handles the analysis side of the workflow: processing imagery, organizing candidate targets, preserving review products, and preparing outputs. PelagiaView connects to that server through the browser so scientists can inspect imagery, review regions of interest, and track progress interactively.
+Pelagia handles the full analysis path: ingesting and processing imagery, detecting and identifying plankton, organizing candidate targets, preserving review products, and preparing outputs. PelagiaView connects through the browser so scientists can monitor incoming observations, inspect imagery, review regions of interest, and track progress interactively.
 
 This architecture keeps the system naturally flexible. The server can run where the data and compute resources live, while the web GUI can be opened from a workstation, laptop, shared lab machine, or demo environment.
 
@@ -25,17 +25,17 @@ The software supports fast movement between source imagery, candidate regions, m
   <img src="/demo-screenshots/frame_inspection-web.jpg" alt="PelagiaView frame inspection with detections highlighted on a source frame." />
 </figure>
 
-## High-Performance Workflow
+## High-Throughput By Design
 
-Large imagery collections need more than a folder viewer. Pelagia is structured to run processing work in the background, track progress across stages, and keep the interface responsive while data products are generated.
+Large, continuous image streams need more than a folder viewer. Pelagia is structured for concurrent background processing, staged data products, and a responsive interface—supporting real-time interpretation during acquisition as well as rapid processing of accumulated collections.
 
 ## Purposeful Technology
 
 Pelagia uses a Python backend with a FastAPI service layer and a browser-based review interface. Those choices make the suite practical to deploy, integrate, and extend while keeping the public workflow focused on imagery, review, and data products.
 
-## Demo And Source
+## Try Pelagia
 
-You can explore the hosted demo at [demo.pelagia.studio](https://demo.pelagia.studio/?server=https%3A%2F%2Fdemoapi.pelagia.studio&username=demo&password=demo) and review the open source code at [github.com/Icy-Seas-Co-Laboratory/Pelagia](https://github.com/Icy-Seas-Co-Laboratory/Pelagia).
+Explore the complete workflow in the hosted [Pelagia demo](https://demo.pelagia.studio/?server=https%3A%2F%2Fdemoapi.pelagia.studio&username=demo&password=demo). The Pelagia processing engine is also available on [GitHub](https://github.com/Icy-Seas-Co-Laboratory/Pelagia) for teams building reproducible and extensible analysis workflows.
 
 ## Built For Pelagic Data
 
@@ -43,6 +43,6 @@ Pelagia is useful for workflows involving plankton, particles, marine snow, orga
 
 ## Reproducible Outputs
 
-Review and processing decisions should lead to durable products: curated regions of interest, masks, measurements, labels, classifications, and exports that can be used in statistical analysis, machine-learning workflows, or long-term monitoring.
+Review and processing decisions should lead to durable products: curated regions of interest, masks, measurements, labels, classifications, and exports that can be used in statistical analysis, machine-learning workflows, or long-term monitoring. Every derived product remains connected to its source imagery, acquisition metadata, processing and model versions, and review state so results can be audited and reproduced.
 
 </div>

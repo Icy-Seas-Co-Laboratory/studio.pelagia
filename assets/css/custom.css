@@ -534,6 +534,49 @@ p {
   margin-top: 1.7rem;
 }
 
+.field-metrics {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.instrument-workflow {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 1.75rem 0;
+}
+
+.instrument-workflow span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 5.25rem;
+  padding: 0.9rem;
+  border: 1px solid #b9ccc5;
+  border-radius: 0.8rem;
+  color: #263a33;
+  background: #f1f6f4;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.instrument-workflow span:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -0.62rem;
+  z-index: 1;
+  color: #35705d;
+}
+
+.responsibilities ul {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.responsibilities li + li {
+  margin-top: 0.45rem;
+}
+
 .work-preview-media {
   position: relative;
   min-height: 27rem;
@@ -567,9 +610,15 @@ p {
 
   .pelagia-grid-list,
   .pelagia-metrics,
+  .field-metrics,
+  .instrument-workflow,
   .work-card-grid,
   .work-roi-strip {
     grid-template-columns: 1fr;
+  }
+
+  .instrument-workflow span:not(:last-child)::after {
+    display: none;
   }
 
   .pelagia-hero h1 {

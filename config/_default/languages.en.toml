@@ -9,7 +9,7 @@ copyright = "&copy; 2026 Icy Seas Co-Laboratory LLC. Pelagia is a trademark of I
 [params]
   dateFormat = "2 January 2006"
 
-  description = "Pelagia is an open source analysis server with the PelagiaView web GUI for turning pelagic imagery into usable oceanographic data."
+  description = "Pelagia is the world's first real-time pelagic image processing suite, built for plankton identification and high-throughput ocean imaging."
 
 [params.author]
   name = "Pelagia"

@@ -1,14 +1,14 @@
 ---
 title: ""
-description: "Pelagia is an open source analysis server with the PelagiaView web GUI for turning pelagic imagery into usable oceanographic data."
+description: "Pelagia is the world's first real-time pelagic image processing suite, built for live plankton identification and high-throughput ocean imaging."
 ---
 
 <div class="pelagia-home">
   <section class="pelagia-hero">
     <div>
-      <p class="pelagia-kicker">Pelagic imagery to oceanographic data</p>
-      <h1>See more of the water column.</h1>
-      <p class="lead">Pelagia is an open source analysis server for pelagic imagery. PelagiaView is its web GUI: a high-performance interactive workspace for turning large image collections into measurable, reviewable, analysis-ready records.</p>
+      <p class="pelagia-kicker">The world's first real-time pelagic image processing suite</p>
+      <h1>See the water column as it happens.</h1>
+      <p class="lead">Pelagia brings real-time plankton identification, high-throughput image processing, and interactive scientific review into one integrated suite—turning live pelagic imagery into measurable, analysis-ready observations at the speed modern instruments collect it.</p>
       <div class="pelagia-actions">
         <a class="pelagia-button primary" href="/approach/">Explore the approach</a>
         <a class="pelagia-button secondary" href="https://demo.pelagia.studio/?server=https%3A%2F%2Fdemoapi.pelagia.studio&username=demo&password=demo" rel="noopener noreferrer">Try the demo</a>
@@ -21,10 +21,10 @@ description: "Pelagia is an open source analysis server with the PelagiaView web
         <img src="/demo-screenshots/roi_browser-web.jpg" alt="" />
       </figure>
       <div class="pelagia-panel signal">
-        <p class="panel-label">Survey review</p>
-        <div class="status-row"><span>Image context</span><strong>visible</strong></div>
-        <div class="status-row"><span>Candidate targets</span><strong>ready</strong></div>
-        <div class="status-row"><span>Data products</span><strong>pending</strong></div>
+        <p class="panel-label">Real-time pipeline</p>
+        <div class="status-row"><span>Image stream</span><strong>live</strong></div>
+        <div class="status-row"><span>Plankton ID</span><strong>running</strong></div>
+        <div class="status-row"><span>Data products</span><strong>ready</strong></div>
       </div>
     </div>
   </section>
@@ -41,10 +41,10 @@ description: "Pelagia is an open source analysis server with the PelagiaView web
 
   <section class="pelagia-section pelagia-showcase work-preview">
     <div>
-      <h2>Built around real pelagic imagery.</h2>
-      <p>Example workflows move from full-frame instrument images to scale-aware regions of interest that can be reviewed, measured, labeled, and exported for downstream oceanographic analysis.</p>
+      <h2>Proven in the Northern Gulf of Alaska.</h2>
+      <p>Pelagia was developed from direct experience operating and processing data from Russ Hopcroft's UAF Deep-Focus Particle Imager (DPI) for the Northern Gulf of Alaska Long-Term Ecological Research program. That field experience shapes a workflow built for real instruments, real plankton communities, and sustained, high-volume observation.</p>
       <div class="pelagia-actions compact">
-        <a class="pelagia-button secondary" href="/work/">See example work</a>
+        <a class="pelagia-button secondary" href="/field-study/">Explore the DPI field study</a>
       </div>
     </div>
     <div class="work-preview-media">
@@ -58,12 +58,12 @@ description: "Pelagia is an open source analysis server with the PelagiaView web
   </section>
 
   <section class="pelagia-section">
-    <h2>Built for the scale of modern pelagic imaging.</h2>
-    <p>Optical oceanographic instruments can collect enormous image streams, but scientific value depends on converting those images into trustworthy observations. Pelagia supports the work between raw imagery and quantitative analysis: detection, review, measurement, labeling, quality control, and export.</p>
+    <h2>Real-time insight at pelagic scale.</h2>
+    <p>Modern optical instruments can produce image streams faster than conventional workflows can interpret them. Pelagia is built for high-throughput processing from acquisition onward: detecting and identifying plankton in real time while preserving the imagery, measurements, confidence, and context scientists need for trustworthy analysis.</p>
     <div class="pelagia-grid-list">
       <div class="pelagia-card">
-        <h3>Find signal in volume</h3>
-        <p>Move through large imagery collections by focusing attention on candidate organisms, particles, marine snow, or other features of interest.</p>
+        <h3>Identify plankton in real time</h3>
+        <p>Turn continuous instrument imagery into classified biological observations while sampling is still underway.</p>
       </div>
       <div class="pelagia-card">
         <h3>Keep context visible</h3>
@@ -78,21 +78,21 @@ description: "Pelagia is an open source analysis server with the PelagiaView web
 
   <section class="pelagia-section pelagia-split">
     <div>
-      <h2>A flexible server and web GUI architecture.</h2>
-      <p>The analysis server and web interface are separate by design. Pelagia can run close to the data and processing resources, while PelagiaView gives scientists an interactive browser workspace for review, quality control, and export. That split makes the suite easier to deploy locally, share across teams, extend with new workflows, and connect to existing oceanographic data systems.</p>
+      <h2>One suite, from instrument stream to scientific insight.</h2>
+      <p>Pelagia runs close to the instrument, data, and processing resources, while PelagiaView gives scientists an interactive browser workspace for live monitoring, review, quality control, and export. Together they create a responsive end-to-end environment that can keep pace with acquisition, support teams in the field or ashore, and connect to existing oceanographic data systems.</p>
     </div>
     <div class="pelagia-metrics">
       <div class="pelagia-metric">
-        <strong>Server</strong>
-        <span>Open source analysis services for imagery processing, data products, and reproducible workflows</span>
+        <strong>Real time</strong>
+        <span>Process imagery and identify plankton as observations arrive</span>
       </div>
       <div class="pelagia-metric">
-        <strong>Web GUI</strong>
-        <span>PelagiaView provides interactive review without requiring every user to run processing locally</span>
+        <strong>High throughput</strong>
+        <span>Keep pace with large, continuous image streams from modern pelagic instruments</span>
       </div>
       <div class="pelagia-metric">
-        <strong>Flexible</strong>
-        <span>Deploy for demos, local projects, shared instruments, or larger analysis environments</span>
+        <strong>Scientist ready</strong>
+        <span>Monitor, review, refine, and export through the PelagiaView interactive workspace</span>
       </div>
     </div>
   </section>

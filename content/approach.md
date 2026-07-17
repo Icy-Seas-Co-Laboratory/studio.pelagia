@@ -8,10 +8,10 @@ layout: "simple"
 
 <div class="approach-layout">
 <div class="approach-copy">
-<p class="lead">Pelagia is designed around a practical oceanographic need: transform large volumes of pelagic imagery into consistent, reviewable, analysis-ready observations.</p>
+<p class="lead">Pelagia is designed around a practical oceanographic need: identify plankton and transform high-volume pelagic imagery into consistent, reviewable observations in real time.</p>
 
 <h2>From Imagery To Evidence</h2>
-<p>Pelagic imaging programs can generate more visual data than a research team can inspect frame by frame. Pelagia helps move that work from scattered image files and manual review into an organized workflow where candidate organisms, particles, or other features of interest can be detected, compared, measured, labeled, and exported.</p>
+<p>Pelagic imaging programs can generate more visual data than a research team can inspect frame by frame. Pelagia processes that stream as it arrives, identifying plankton and organizing candidate organisms, particles, and other features so they can be compared, measured, reviewed, labeled, and exported.</p>
 
 <h2>Human Judgment Stays Central</h2>
 <p>The goal is not to hide scientific interpretation behind automation. Pelagia keeps imagery, regions of interest, masks, measurements, labels, and review progress visible so scientists can inspect the data products that matter and refine the workflow as the dataset teaches them what to look for.</p>

@@ -5,7 +5,15 @@ description: "How Pelagia supports oceanographic data science and pelagic imager
 
 <div class="page-simple">
 
-<p class="lead">Pelagia is for oceanographic programs that need to extract quantitative signal from imagery at a scale where manual review alone is no longer enough.</p>
+<p class="lead">Pelagia is for oceanographic programs that need real-time biological insight and high-throughput quantitative analysis at a scale where manual review alone is no longer enough.</p>
+
+## Real-Time Plankton Identification
+
+Identify plankton as imagery arrives, giving teams an immediate view of biological observations during sampling. Real-time results can guide instrument monitoring, reveal changes in the water column, and begin the path to analysis-ready data before a deployment is complete.
+
+## Instrument-To-Data Systems
+
+Pelagia can serve as the analysis layer for imaging instruments that produce continuous or repeated observations. It preserves the relationships among raw imagery, time and position, instrument state, environmental measurements, processing and model versions, review decisions, and final biological records. The result is an oceanographic observation system—not a disconnected collection of classified pictures.
 
 ## Survey And Monitoring Programs
 
