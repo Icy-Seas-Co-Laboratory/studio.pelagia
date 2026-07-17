@@ -577,6 +577,29 @@ p {
   margin-top: 0.45rem;
 }
 
+.field-collaborator {
+  max-width: 58rem;
+  margin: 2.25rem 0 1rem;
+}
+
+.field-collaborator h2 {
+  margin: 0.35rem 0 0.85rem;
+  color: #17201b;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  line-height: 1.05;
+}
+
+.field-collaborator p {
+  max-width: 48rem;
+}
+
+.field-collaborator a {
+  display: inline-block;
+  margin-top: 0.4rem;
+  color: #28634f;
+  font-weight: 700;
+}
+
 .work-preview-media {
   position: relative;
   min-height: 27rem;

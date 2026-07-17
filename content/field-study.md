@@ -9,6 +9,13 @@ layout: "simple"
 <p class="pelagia-kicker">Field proven in the Northern Gulf of Alaska</p>
 <p class="lead">Pelagia grew from direct experience operating and processing data from the University of Alaska Fairbanks Deep-Focus Particle Imager for the Northern Gulf of Alaska Long-Term Ecological Research program.</p>
 
+<div class="pelagia-card field-collaborator">
+  <p class="pelagia-kicker">DPI processing at Icy Seas</p>
+  <h2>Hannah Kepner, Digital System Specialist</h2>
+  <p>Hannah focuses on DPI processing work at Icy Seas, bringing her experience with in situ plankton imagery, machine-learning classification, and Northern Gulf of Alaska gelatinous zooplankton research to Pelagia's scientific workflows.</p>
+  <a href="https://www.hekepner.com/isiisdpi" rel="noopener noreferrer">Explore Hannah's ISIIS-DPI work →</a>
+</div>
+
 <section class="work-section work-feature">
   <div>
     <h2>An oceanographic observatory, not simply a camera.</h2>
@@ -77,6 +84,7 @@ layout: "simple"
   </div>
   <div class="pelagia-actions compact">
     <a class="pelagia-button primary" href="https://scholarworks.alaska.edu/uaf_grad_oceanography/43/" rel="noopener noreferrer">Read the UAF thesis</a>
+    <a class="pelagia-button secondary" href="https://www.hekepner.com/isiisdpi" rel="noopener noreferrer">Hannah's DPI work</a>
     <a class="pelagia-button secondary" href="https://nga.lternet.edu/" rel="noopener noreferrer">Visit NGA LTER</a>
   </div>
 </section>
