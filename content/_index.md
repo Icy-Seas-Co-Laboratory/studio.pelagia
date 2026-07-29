@@ -1,14 +1,14 @@
 ---
 title: ""
-description: "Pelagia is the world's first real-time pelagic image processing suite, built for live plankton identification and high-throughput ocean imaging."
+description: "Pelagia is a real-time pelagic image processing suite shaped by field operators, scientific software developers, instrument engineers, and plankton imaging researchers."
 ---
 
 <div class="pelagia-home">
   <section class="pelagia-hero">
     <div>
-      <p class="pelagia-kicker">The world's first real-time pelagic image processing suite</p>
+      <p class="pelagia-kicker">Field-built software for real-time pelagic imaging</p>
       <h1>See the water column as it happens.</h1>
-      <p class="lead">Pelagia brings real-time plankton identification, high-throughput image processing, and interactive scientific review into one integrated suite—turning live pelagic imagery into measurable, analysis-ready observations at the speed modern instruments collect it.</p>
+      <p class="lead">Pelagia brings real-time plankton identification, high-throughput image processing, and interactive scientific review into one integrated suite. It is being built from direct experience operating imaging systems at sea, processing their data at scale, and working with scientists to turn imagery into defensible observations.</p>
       <div class="pelagia-actions">
         <a class="pelagia-button primary" href="/approach/">Explore the approach</a>
         <a class="pelagia-button secondary" href="https://demo.pelagia.studio/?server=https%3A%2F%2Fdemoapi.pelagia.studio&username=demo&password=demo" rel="noopener noreferrer">Try the demo</a>
@@ -18,7 +18,7 @@ description: "Pelagia is the world's first real-time pelagic image processing su
       <div class="pelagia-ring"></div>
       <img class="pelagia-hero-icon" src="/brand/pelagia_icon.png" alt="" />
       <figure class="pelagia-screenshot hero-shot">
-        <img src="/demo-screenshots/roi_browser-web.jpg" alt="" />
+        {{< responsive-image src="images/demo-screenshots/roi_browser-web.jpg" alt="" widths="480,800,1200" sizes="(max-width: 900px) 94vw, 31rem" quality="86" loading="eager" fetchpriority="high" >}}
       </figure>
       <div class="pelagia-panel signal">
         <p class="panel-label">Real-time pipeline</p>
@@ -32,75 +32,76 @@ description: "Pelagia is the world's first real-time pelagic image processing su
   <section class="pelagia-section pelagia-showcase">
     <div>
       <h2>Review detections in the frame where they were observed.</h2>
-      <p>Pelagic imagery often needs both the cropped target and its surrounding context. PelagiaView supports frame inspection so reviewers can examine candidate regions, nearby particles, scale, masks, and image metadata without losing sight of the original observation.</p>
+      <p>Scientific review is not an afterthought. PelagiaView keeps each detected organism connected to its source frame, nearby particles, scale, masks, measurements, and image metadata—giving researchers the context they need to evaluate automated results and refine the workflow.</p>
     </div>
     <figure class="pelagia-screenshot">
-      <img src="/demo-screenshots/frame_inspection-web.jpg" alt="PelagiaView frame inspection showing detections overlaid on a source frame with frame metadata." />
+      {{< responsive-image src="images/demo-screenshots/frame_inspection-web.jpg" alt="PelagiaView frame inspection showing detections overlaid on a source frame with frame metadata." widths="480,800,1200,1600" sizes="(max-width: 900px) 100vw, 52vw" quality="86" >}}
     </figure>
   </section>
 
   <section class="pelagia-section pelagia-showcase work-preview">
     <div>
-      <h2>Proven in the Northern Gulf of Alaska.</h2>
-      <p>Pelagia was developed from direct experience operating and processing data from Russ Hopcroft's UAF Deep-Focus Particle Imager (DPI) for the Northern Gulf of Alaska Long-Term Ecological Research program. That field experience shapes a workflow built for real instruments, real plankton communities, and sustained, high-volume observation.</p>
+      <h2>Built on decades of field experience.</h2>
+      <p>Pelagia brings together 25 years of experience in plankton imaging, instrument engineering, field operations, scientific computing, and zooplankton ecology. It combines the technical capabilities of Icy Seas Co-Laboratory with Bellamare's engineering expertise and deployment experience, plus scientific guidance from Dr. Adam Greer at the University of Georgia Skidaway Institute of Oceanography.</p>
+      <p>The result is a workflow grounded in real deployments and designed to transform sustained, high-volume imagery into traceable, scientifically defensible observations.</p>
       <div class="pelagia-actions compact">
-        <a class="pelagia-button secondary" href="/field-study/">Explore the DPI field study</a>
+        <a class="pelagia-button secondary" href="/approach/">Explore Pelagia's development</a>
       </div>
     </div>
     <div class="work-preview-media">
       <figure class="work-frame">
-        <img src="/example-dpi/plankton-frame-original-web.jpg" alt="Full-frame pelagic image with a candidate plankton organism highlighted." />
+        {{< responsive-image src="images/example-dpi/plankton-frame-original-web.jpg" alt="Full-frame pelagic image with a candidate plankton organism highlighted." widths="480,800,1200,1600" sizes="(max-width: 900px) 92vw, 28rem" quality="85" >}}
       </figure>
       <figure class="work-roi floating">
-        <img src="/example-dpi/plankton-roi-horizontal-web.jpg" alt="Cropped plankton region of interest with scale bar." />
+        {{< responsive-image src="images/example-dpi/plankton-roi-horizontal-web.jpg" alt="Cropped plankton region of interest with scale bar." widths="320,480,720" sizes="(max-width: 620px) 100vw, 23rem" quality="85" >}}
       </figure>
     </div>
   </section>
 
   <section class="pelagia-section">
-    <h2>Real-time insight at pelagic scale.</h2>
-    <p>Modern optical instruments can produce image streams faster than conventional workflows can interpret them. Pelagia is built for high-throughput processing from acquisition onward: detecting and identifying plankton in real time while preserving the imagery, measurements, confidence, and context scientists need for trustworthy analysis.</p>
+    <h2>Experience carried into every stage.</h2>
+    <p>Pelagia translates practical experience in instrument operations, image acquisition, high-throughput computing, machine learning, and scientific review into a workflow that can keep pace with modern optical systems while preserving the context researchers need to trust the results.</p>
     <div class="pelagia-grid-list">
       <div class="pelagia-card">
-        <h3>Identify plankton in real time</h3>
-        <p>Turn continuous instrument imagery into classified biological observations while sampling is still underway.</p>
+        <h3>Process while sampling</h3>
+        <p>Turn continuous instrument imagery into biological observations while acquisition is still underway.</p>
       </div>
       <div class="pelagia-card">
-        <h3>Keep context visible</h3>
-        <p>Review targets with their surrounding image context, masks, measurements, and confidence cues so scientific judgment remains part of the workflow.</p>
+        <h3>Keep scientific judgment central</h3>
+        <p>Review targets with their source imagery, masks, measurements, classifications, and confidence cues visible.</p>
       </div>
       <div class="pelagia-card">
-        <h3>Create usable data</h3>
-        <p>Turn reviewed imagery into structured records for abundance workflows, morphology measurements, classification, model training, and downstream analysis.</p>
+        <h3>Preserve traceability</h3>
+        <p>Create structured, analysis-ready records that remain connected to their source imagery and processing history.</p>
       </div>
     </div>
   </section>
 
   <section class="pelagia-section pelagia-split">
     <div>
-      <h2>One suite, from instrument stream to scientific insight.</h2>
-      <p>Pelagia runs close to the instrument, data, and processing resources, while PelagiaView gives scientists an interactive browser workspace for live monitoring, review, quality control, and export. Together they create a responsive end-to-end environment that can keep pace with acquisition, support teams in the field or ashore, and connect to existing oceanographic data systems.</p>
+      <h2>A partnership across the imaging lifecycle.</h2>
+      <p>Pelagia brings together complementary expertise. Bellamare contributes instrument engineering, deployment experience, and development support while Icy Seas leads scientific software development and interactive review. Dr. Adam Greer provides expert guidance grounded in zooplankton ecology and in situ imaging. This collaboration connects the software to the instruments, operational realities, and scientific questions it is meant to serve.</p>
     </div>
     <div class="pelagia-metrics">
       <div class="pelagia-metric">
-        <strong>Real time</strong>
-        <span>Process imagery and identify plankton as observations arrive</span>
+        <strong>Icy Seas</strong>
+        <span>Scientific computing, software development, and field experience</span>
       </div>
       <div class="pelagia-metric">
-        <strong>High throughput</strong>
-        <span>Keep pace with large, continuous image streams from modern pelagic instruments</span>
+        <strong>Bellamare</strong>
+        <span>Imaging systems, subsea engineering, and development support</span>
       </div>
       <div class="pelagia-metric">
-        <strong>Scientist ready</strong>
-        <span>Monitor, review, refine, and export through the PelagiaView interactive workspace</span>
+        <strong>Research</strong>
+        <span>Plankton ecology, imaging methods, and research workflows</span>
       </div>
     </div>
   </section>
 
   <section class="pelagia-section pelagia-cta">
     <div>
-      <h2>Have pelagic imagery that needs analysis?</h2>
-      <p>Bring the dataset shape, instrument context, review burden, and the scientific output you need. Pelagia is built to make that path more interactive, scalable, and reproducible.</p>
+      <h2>Work with a team that understands the instrument and the data.</h2>
+      <p>Bring us the imaging system, dataset, operational constraints, and scientific outputs you need. Pelagia is being built by people who understand the path from deployment and acquisition through processing, review, and analysis-ready export.</p>
     </div>
     <div class="pelagia-actions compact">
       <a class="pelagia-button primary" href="/contact/">Start a conversation</a>

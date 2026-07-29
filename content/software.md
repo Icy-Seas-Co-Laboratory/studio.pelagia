@@ -8,7 +8,7 @@ description: "Pelagia is a real-time, high-throughput pelagic image processing a
 <p class="lead">Pelagia is an integrated, real-time pelagic image processing suite. Its processing engine and PelagiaView scientific workspace work together to identify plankton, manage high-throughput imagery, and turn instrument streams into reviewable, analysis-ready data.</p>
 
 <figure class="pelagia-page-image">
-  <img src="/demo-screenshots/roi_browser-web.jpg" alt="PelagiaView ROI Browser showing filter controls and tiled candidate ROI imagery." />
+  {{< responsive-image src="images/demo-screenshots/roi_browser-web.jpg" alt="PelagiaView ROI Browser showing filter controls and tiled candidate ROI imagery." widths="480,800,1200,1600" sizes="(max-width: 900px) 100vw, 46rem" quality="86" >}}
 </figure>
 
 ## A Real-Time Processing Suite
@@ -22,12 +22,12 @@ This architecture keeps the system naturally flexible. The server can run where 
 The software supports fast movement between source imagery, candidate regions, masks, frame context, and review state. That matters for pelagic imagery, where signal can be subtle and confidence often depends on seeing both the cropped target and the surrounding frame.
 
 <figure class="pelagia-page-image">
-  <img src="/demo-screenshots/frame_inspection-web.jpg" alt="PelagiaView frame inspection with detections highlighted on a source frame." />
+  {{< responsive-image src="images/demo-screenshots/frame_inspection-web.jpg" alt="PelagiaView frame inspection with detections highlighted on a source frame." widths="480,800,1200,1600" sizes="(max-width: 900px) 100vw, 46rem" quality="86" >}}
 </figure>
 
-## High-Throughput By Design
+## High-Throughput by Design
 
-Large, continuous image streams need more than a folder viewer. Pelagia is structured for concurrent background processing, staged data products, and a responsive interface—supporting real-time interpretation during acquisition as well as rapid processing of accumulated collections.
+Large, continuous image streams—especially those produced by ISIIS-DPI plankton cameras—need more than a folder viewer. Pelagia is structured for concurrent background processing, staged data products, and a responsive interface, supporting real-time interpretation during acquisition as well as rapid processing of accumulated collections.
 
 ## Purposeful Technology
 

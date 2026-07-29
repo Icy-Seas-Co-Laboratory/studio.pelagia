@@ -1,0 +1,39 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $sizes := .Get "sizes" | default "100vw" -}}
+{{- $widths := .Get "widths" | default "480,800,1200,1600" -}}
+{{- $quality := int (.Get "quality" | default "82") -}}
+{{- $loading := .Get "loading" | default "lazy" -}}
+{{- $class := .Get "class" | default "" -}}
+{{- $fetchPriority := .Get "fetchpriority" -}}
+{{- $resource := resources.Get $src -}}
+
+{{- if not $resource -}}
+  {{- errorf "responsive-image shortcode could not find %q in assets" $src -}}
+{{- end -}}
+
+{{- $webpSources := slice -}}
+{{- range split $widths "," -}}
+  {{- $requestedWidth := int (strings.TrimSpace .) -}}
+  {{- if and (gt $requestedWidth 0) (le $requestedWidth $resource.Width) -}}
+    {{- $webp := $resource.Resize (printf "%dx webp q%d" $requestedWidth $quality) -}}
+    {{- $webpSources = $webpSources | append (printf "%s %dw" $webp.RelPermalink $webp.Width) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if eq (len $webpSources) 0 -}}
+  {{- $webp := $resource.Resize (printf "%dx webp q%d" $resource.Width $quality) -}}
+  {{- $webpSources = $webpSources | append (printf "%s %dw" $webp.RelPermalink $webp.Width) -}}
+{{- end -}}
+
+<picture class="responsive-picture{{ with $class }} {{ . }}{{ end }}">
+  <source type="image/webp" srcset="{{ delimit $webpSources ", " }}" sizes="{{ $sizes }}">
+  <img
+    src="{{ $resource.RelPermalink }}"
+    alt="{{ $alt }}"
+    width="{{ $resource.Width }}"
+    height="{{ $resource.Height }}"
+    loading="{{ $loading }}"
+    decoding="async"
+    {{- with $fetchPriority }} fetchpriority="{{ . }}"{{ end }}>
+</picture>

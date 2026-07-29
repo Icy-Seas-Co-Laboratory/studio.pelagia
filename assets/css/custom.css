@@ -1,3 +1,12 @@
+:root {
+  --pelagia-gutter: clamp(1.25rem, 4.5vw, 5rem);
+  --pelagia-text-body: clamp(1.0625rem, 1.01rem + 0.2vw, 1.18rem);
+  --pelagia-text-card: clamp(1.02rem, 0.98rem + 0.16vw, 1.12rem);
+  --pelagia-text-lead: clamp(1.25rem, 1.12rem + 0.48vw, 1.55rem);
+  --pelagia-text-section: clamp(2.45rem, 1.92rem + 2.3vw, 4.2rem);
+  --pelagia-text-display: clamp(3.25rem, 2.2rem + 4.5vw, 6.6rem);
+}
+
 html {
   height: 100%;
   background: #eef3f1;
@@ -12,12 +21,44 @@ body {
     repeating-linear-gradient(90deg, rgba(31, 107, 87, 0.04) 0, rgba(31, 107, 87, 0.04) 1px, transparent 1px, transparent 6.5rem);
 }
 
+body.m-auto {
+  padding-right: var(--pelagia-gutter);
+  padding-left: var(--pelagia-gutter);
+}
+
 body.h-screen {
   height: auto;
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: var(--pelagia-text-body);
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+.prose a {
+  overflow-wrap: anywhere;
+}
+
+section.prose > div.min-h-0.min-w-0.max-w-prose.grow {
+  width: 100%;
+  max-width: 100%;
+}
+
+.responsive-picture,
+.responsive-picture img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.responsive-picture img {
+  height: auto;
 }
 
 .pelagia-logo {
@@ -65,7 +106,7 @@ p {
 .pelagia-hero h1 {
   max-width: 12ch;
   color: #17201b;
-  font-size: 5rem;
+  font-size: clamp(3.25rem, 2.45rem + 3.4vw, 5rem);
   line-height: 0.94;
   letter-spacing: 0;
 }
@@ -74,7 +115,7 @@ p {
   max-width: 43rem;
   margin-top: 1.35rem;
   color: #30443d;
-  font-size: 1.63rem;
+  font-size: var(--pelagia-text-lead);
   line-height: 1.5;
 }
 
@@ -272,7 +313,7 @@ p {
 .pelagia-section h2 {
   max-width: 15ch;
   color: #17201b;
-  font-size: 3.5rem;
+  font-size: var(--pelagia-text-section);
   line-height: 1;
   letter-spacing: 0;
 }
@@ -281,13 +322,13 @@ p {
 .pelagia-split > p {
   max-width: 46rem;
   color: #30443d;
-  font-size: 1.38rem;
+  font-size: var(--pelagia-text-lead);
   line-height: 1.65;
 }
 
 .pelagia-grid-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
   gap: 1rem;
   margin-top: 1.7rem;
 }
@@ -308,7 +349,7 @@ p {
 
 .pelagia-card p {
   color: #465950;
-  font-size: 1.25rem;
+  font-size: var(--pelagia-text-card);
   line-height: 1.55;
 }
 
@@ -321,7 +362,7 @@ p {
 
 .pelagia-metrics {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
   gap: 0.75rem;
 }
 
@@ -372,7 +413,351 @@ p {
 }
 
 .page-simple {
-  max-width: 54rem;
+  max-width: 46rem;
+}
+
+.prose :where(.page-contact) {
+  max-width: none;
+}
+
+.page-contact {
+  max-width: 72rem;
+}
+
+.contact-hero {
+  max-width: 52rem;
+  padding: clamp(1rem, 3vw, 2.25rem) 0 clamp(3rem, 7vw, 5.5rem);
+}
+
+.contact-hero h2 {
+  max-width: 12ch;
+  margin: 0.35rem 0 1.25rem;
+  color: #17201b;
+  font-size: var(--pelagia-text-display);
+  line-height: 0.94;
+  letter-spacing: 0;
+}
+
+.contact-hero .lead {
+  max-width: 50rem;
+  color: #30443d;
+  font-size: var(--pelagia-text-lead);
+  line-height: 1.55;
+}
+
+.contact-section {
+  padding: clamp(2.75rem, 7vw, 5.25rem) 0;
+  border-top: 1px solid rgba(23, 32, 27, 0.1);
+}
+
+.contact-section > h2,
+.contact-about h2,
+.contact-inquiry h2 {
+  max-width: 16ch;
+  margin: 0;
+  color: #17201b;
+  font-size: var(--pelagia-text-section);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.contact-section-intro {
+  max-width: 48rem;
+  color: #30443d;
+  font-size: var(--pelagia-text-body);
+  line-height: 1.6;
+}
+
+.contact-routes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-route {
+  display: flex;
+  min-height: 24rem;
+  flex-direction: column;
+  border: 1px solid #c8d7d2;
+  border-top: 5px solid #1f6b57;
+  border-radius: 0.38rem;
+  padding: clamp(1.35rem, 4vw, 2rem);
+  background: rgba(251, 253, 252, 0.86);
+}
+
+.contact-route.instrument-route {
+  border-top-color: #1c7e99;
+}
+
+.contact-route-label,
+.contact-person-affiliation {
+  margin: 0 0 0.7rem;
+  color: #60746c;
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.contact-route h3 {
+  margin: 0;
+  color: #17201b;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.05;
+}
+
+.contact-route > p:not(.contact-route-label) {
+  color: #465950;
+  font-size: var(--pelagia-text-card);
+  line-height: 1.55;
+}
+
+.contact-route-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1.2rem;
+}
+
+.contact-email-link {
+  color: #28634f;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.contact-about,
+.contact-inquiry {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(22rem, 1.15fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.contact-about > div:last-child p,
+.contact-inquiry > div > p {
+  color: #30443d;
+  font-size: var(--pelagia-text-body);
+  line-height: 1.65;
+}
+
+.contact-about a {
+  color: #28634f;
+  font-weight: 800;
+}
+
+.contact-people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: 1rem;
+  margin-top: 2.25rem;
+}
+
+.contact-person {
+  align-self: start;
+  overflow: hidden;
+  border: 1px solid #c8d7d2;
+  border-radius: 0.38rem;
+  background: rgba(251, 253, 252, 0.86);
+}
+
+.contact-person > .responsive-picture {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-bottom: 1px solid #d0ddd8;
+}
+
+.contact-person > .responsive-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-person-copy {
+  padding: 1.2rem;
+}
+
+.contact-person h3 {
+  margin: 0;
+  color: #17201b;
+  font-size: 1.75rem;
+  line-height: 1.1;
+}
+
+.contact-person-role {
+  min-height: 3.2rem;
+  margin: 0.55rem 0 0.85rem;
+  color: #28634f;
+  font-size: 1.03rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.contact-person-copy > p:not(.contact-person-affiliation, .contact-person-role) {
+  color: #465950;
+  font-size: var(--pelagia-text-card);
+  line-height: 1.55;
+}
+
+.contact-person-bio {
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+}
+
+.contact-person-bio summary {
+  display: inline-flex;
+  gap: 0.55rem;
+  align-items: center;
+  border: 1px solid #9ebbb1;
+  border-radius: 999px;
+  padding: 0.48rem 0.8rem;
+  color: #28634f;
+  background: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  list-style: none;
+}
+
+.contact-person-bio summary::-webkit-details-marker {
+  display: none;
+}
+
+.contact-person-bio summary:hover {
+  border-color: #28634f;
+  background: #f1f7f4;
+}
+
+.contact-person-bio summary:focus-visible {
+  outline: 3px solid rgba(28, 126, 153, 0.32);
+  outline-offset: 3px;
+}
+
+.contact-bio-less {
+  display: none;
+}
+
+.contact-bio-icon::before {
+  content: "+";
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+.contact-person-bio[open] .contact-bio-more {
+  display: none;
+}
+
+.contact-person-bio[open] .contact-bio-less {
+  display: inline;
+}
+
+.contact-person-bio[open] .contact-bio-icon::before {
+  content: "−";
+}
+
+.contact-person-bio-content {
+  margin-top: 0.9rem;
+}
+
+.contact-person-bio-content p {
+  margin: 0;
+  color: #465950;
+  font-size: var(--pelagia-text-card);
+  line-height: 1.58;
+}
+
+.contact-person-bio-content p + p {
+  margin-top: 0.85rem;
+}
+
+.contact-person-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  border-top: 1px solid #e0e8e5;
+  padding-top: 0.85rem;
+}
+
+.contact-person-links a {
+  color: #28634f;
+  font-size: 0.98rem;
+  font-weight: 800;
+}
+
+.contact-person-links a + a::before {
+  content: "·";
+  margin-right: 0.75rem;
+  color: #9aaba4;
+}
+
+.contact-inquiry ul {
+  margin: 0;
+  border-left: 4px solid #1f6b57;
+  padding: 0.2rem 0 0.2rem 1.4rem;
+}
+
+.contact-inquiry li {
+  color: #30443d;
+  font-size: var(--pelagia-text-card);
+  line-height: 1.5;
+}
+
+.page-privacy {
+  max-width: 52rem;
+}
+
+.privacy-meta {
+  margin: 1.1rem 0 2rem;
+  color: #60746c;
+  font-size: 0.96rem;
+}
+
+.privacy-summary {
+  margin: 0 0 clamp(2.75rem, 7vw, 4.75rem);
+  border: 1px solid #c8d7d2;
+  border-left: 5px solid #1c7e99;
+  border-radius: 0.38rem;
+  padding: clamp(1.2rem, 3vw, 1.65rem);
+  background: rgba(241, 247, 244, 0.72);
+}
+
+.privacy-summary > p {
+  margin: 0;
+  color: #17201b;
+  font-size: 1.1rem;
+}
+
+.privacy-summary ul {
+  margin: 0.85rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.privacy-summary li {
+  color: #30443d;
+  font-size: var(--pelagia-text-card);
+  line-height: 1.55;
+}
+
+.privacy-summary li + li {
+  margin-top: 0.45rem;
+}
+
+.privacy-contact {
+  color: #30443d;
+  font-style: normal;
+  line-height: 1.65;
+}
+
+.contact-inquiry li + li {
+  margin-top: 0.65rem;
 }
 
 .page-approach {
@@ -387,12 +772,12 @@ p {
 }
 
 .approach-copy {
-  max-width: 54rem;
+  max-width: 48rem;
 }
 
 .approach-copy .lead {
   color: #30443d;
-  font-size: 1.53rem;
+  font-size: var(--pelagia-text-lead);
   line-height: 1.55;
 }
 
@@ -426,7 +811,7 @@ p {
 
 .page-simple .lead {
   color: #30443d;
-  font-size: 1.53rem;
+  font-size: var(--pelagia-text-lead);
   line-height: 1.55;
 }
 
@@ -442,7 +827,7 @@ p {
 .page-work .lead {
   max-width: 58rem;
   color: #30443d;
-  font-size: 1.53rem;
+  font-size: var(--pelagia-text-lead);
   line-height: 1.55;
 }
 
@@ -455,7 +840,7 @@ p {
   max-width: 15ch;
   margin-top: 0;
   color: #17201b;
-  font-size: 4.19rem;
+  font-size: var(--pelagia-text-section);
   line-height: 1;
   letter-spacing: 0;
 }
@@ -463,7 +848,7 @@ p {
 .work-section p {
   max-width: 47rem;
   color: #30443d;
-  font-size: 1.25rem;
+  font-size: var(--pelagia-text-body);
   line-height: 1.6;
 }
 
@@ -529,13 +914,317 @@ p {
 
 .work-card-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
   gap: 1rem;
   margin-top: 1.7rem;
 }
 
+.work-hero-title {
+  max-width: 12ch;
+  margin: 0.5rem 0 1.25rem;
+  color: #17201b;
+  font-size: var(--pelagia-text-display);
+  line-height: 0.92;
+  letter-spacing: 0;
+}
+
+.lineage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+  margin: clamp(2.25rem, 6vw, 4.5rem) 0;
+}
+
+.lineage-card {
+  min-height: 10rem;
+  border-top: 5px solid #1f6b57;
+  padding: 1rem 0.2rem 0;
+}
+
+.lineage-card.science {
+  border-top-color: #1c7e99;
+}
+
+.lineage-card.operations {
+  border-top-color: #cd5c5c;
+}
+
+.lineage-card span,
+.timeline-date small {
+  display: block;
+  color: #60746c;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.lineage-card strong {
+  display: block;
+  margin-top: 0.55rem;
+  color: #17201b;
+  font-size: 1.45rem;
+  line-height: 1.25;
+}
+
+.work-timeline {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.work-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  bottom: 1rem;
+  left: 9.35rem;
+  width: 1px;
+  background: #b9ccc5;
+}
+
+.timeline-entry {
+  display: grid;
+  grid-template-columns: 8rem 1.2rem minmax(0, 1fr);
+  gap: 0 0.75rem;
+  padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.timeline-date {
+  padding-top: 0.15rem;
+  text-align: right;
+}
+
+.timeline-date span {
+  display: block;
+  color: #17201b;
+  font-size: 1.18rem;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.timeline-date small {
+  margin-top: 0.4rem;
+}
+
+.timeline-node {
+  position: relative;
+  z-index: 1;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin: 0.25rem auto 0;
+  border: 3px solid #eef3f1;
+  border-radius: 50%;
+  background: #1f6b57;
+  box-shadow: 0 0 0 1px #1f6b57;
+}
+
+.track-science .timeline-node {
+  background: #1c7e99;
+  box-shadow: 0 0 0 1px #1c7e99;
+}
+
+.track-operations .timeline-node {
+  background: #cd5c5c;
+  box-shadow: 0 0 0 1px #cd5c5c;
+}
+
+.track-convergence .timeline-node {
+  background: #17201b;
+  box-shadow: 0 0 0 1px #17201b;
+}
+
+.timeline-content {
+  max-width: 48rem;
+  border-top: 3px solid #1f6b57;
+  padding: 1rem 0 0;
+}
+
+.track-science .timeline-content {
+  border-top-color: #1c7e99;
+}
+
+.track-operations .timeline-content {
+  border-top-color: #cd5c5c;
+}
+
+.track-convergence .timeline-content {
+  border-top-color: #17201b;
+}
+
+.timeline-content h3 {
+  max-width: 24ch;
+  margin: 0;
+  color: #17201b;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.02;
+}
+
+.timeline-content p {
+  max-width: 45rem;
+}
+
+.timeline-content a {
+  color: #1f6b57;
+  font-weight: 800;
+}
+
+.timeline-stat {
+  display: flex;
+  max-width: 34rem;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.4rem 0;
+  border-left: 4px solid #1c7e99;
+  padding-left: 1rem;
+}
+
+.timeline-stat strong {
+  color: #17201b;
+  font-size: 3.4rem;
+  line-height: 1;
+}
+
+.timeline-stat span {
+  max-width: 15rem;
+  color: #465950;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.timeline-figure {
+  max-width: 38rem;
+  margin: 1.5rem 0 0;
+}
+
+.work-principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 1rem;
+  margin-top: 1.7rem;
+}
+
+.work-principles .pelagia-card {
+  min-height: 17rem;
+}
+
+.pelagia-today {
+  align-items: center;
+}
+
+.field-studies-hero {
+  max-width: 64rem;
+  padding: clamp(1rem, 3vw, 2.25rem) 0 clamp(3rem, 7vw, 5.5rem);
+}
+
+.field-studies-hero .lead {
+  max-width: 57rem;
+}
+
+.field-studies-intro {
+  max-width: 52rem;
+  color: #30443d;
+  font-size: var(--pelagia-text-body);
+  line-height: 1.65;
+}
+
+.field-study-spectrum {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+}
+
+.field-study-spectrum > div {
+  border-top: 4px solid #1f6b57;
+  padding: 0.9rem 0.15rem 0;
+}
+
+.field-study-spectrum > div:nth-child(2) {
+  border-top-color: #1c7e99;
+}
+
+.field-study-spectrum > div:nth-child(3) {
+  border-top-color: #cd5c5c;
+}
+
+.field-study-spectrum strong,
+.field-study-spectrum span {
+  display: block;
+}
+
+.field-study-spectrum strong {
+  color: #17201b;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.field-study-spectrum span {
+  margin-top: 0.45rem;
+  color: #60746c;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.field-use-grid .pelagia-card {
+  min-height: 15rem;
+}
+
+.field-experience-grid .lineage-card {
+  min-height: auto;
+}
+
+.field-experience-grid p {
+  color: #465950;
+  font-size: var(--pelagia-text-card);
+  line-height: 1.55;
+}
+
+.field-experience-grid a,
+.field-study-back a {
+  color: #28634f;
+  font-weight: 800;
+}
+
+.field-study-back {
+  margin: 0 0 1.75rem;
+  font-size: 1rem;
+}
+
+.featured-field-study {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(20rem, 1.08fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.featured-field-study h2 {
+  max-width: 12ch;
+}
+
+.featured-study-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.5rem 0 0;
+}
+
+.featured-study-metrics span {
+  border: 1px solid #b9ccc5;
+  border-radius: 999px;
+  padding: 0.42rem 0.72rem;
+  color: #465950;
+  background: rgba(251, 253, 252, 0.78);
+  font-size: 0.96rem;
+  line-height: 1.25;
+}
+
+.featured-study-metrics strong {
+  color: #17201b;
+}
+
 .field-metrics {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
 }
 
 .instrument-workflow {
@@ -623,37 +1312,63 @@ p {
   .pelagia-showcase,
   .approach-layout,
   .work-feature,
-  .work-image-grid {
+  .work-image-grid,
+  .featured-field-study,
+  .contact-about,
+  .contact-inquiry {
     grid-template-columns: 1fr;
+  }
+
+  .pelagia-wordmark-img {
+    width: 14rem;
   }
 
   .pelagia-visual {
     min-height: 27rem;
   }
 
-  .pelagia-grid-list,
-  .pelagia-metrics,
-  .field-metrics,
   .instrument-workflow,
-  .work-card-grid,
   .work-roi-strip {
     grid-template-columns: 1fr;
+  }
+
+  .contact-route {
+    min-height: auto;
+  }
+
+  .lineage-card {
+    min-height: auto;
+    padding-bottom: 1.2rem;
   }
 
   .instrument-workflow span:not(:last-child)::after {
     display: none;
   }
 
-  .pelagia-hero h1 {
-    font-size: 5rem;
+  .work-timeline::before {
+    left: 0.45rem;
   }
 
-  .pelagia-section h2 {
-    font-size: 3.5rem;
+  .timeline-entry {
+    grid-template-columns: 1.2rem minmax(0, 1fr);
+    gap: 0 0.85rem;
   }
 
-  .work-section h2 {
-    font-size: 3.56rem;
+  .timeline-date {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 0.65rem;
+    text-align: left;
+  }
+
+  .timeline-node {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .timeline-content {
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .approach-workflow {
@@ -662,30 +1377,25 @@ p {
   }
 }
 
-@media (max-width: 620px) {
-  body {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+@media (max-width: 1100px) {
+  header nav {
+    align-items: flex-start;
   }
 
+  header nav > ul.flex {
+    flex-direction: column;
+  }
+
+  header nav > ul.flex > li.group {
+    margin-right: 0;
+    margin-inline-end: 0;
+    margin-bottom: 0.2rem;
+  }
+}
+
+@media (max-width: 620px) {
   .pelagia-wordmark-img {
     width: 11rem;
-  }
-
-  .pelagia-hero h1 {
-    font-size: 3.88rem;
-  }
-
-  .pelagia-hero .lead {
-    font-size: 1.4rem;
-  }
-
-  .pelagia-section h2 {
-    font-size: 2.81rem;
-  }
-
-  .work-section h2 {
-    font-size: 2.81rem;
   }
 
   .work-preview-media {

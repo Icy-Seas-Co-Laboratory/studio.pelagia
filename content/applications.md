@@ -5,7 +5,7 @@ description: "How Pelagia supports oceanographic data science and pelagic imager
 
 <div class="page-simple">
 
-<p class="lead">Pelagia is for oceanographic programs that need real-time biological insight and high-throughput quantitative analysis at a scale where manual review alone is no longer enough.</p>
+<p class="lead">Pelagia helps oceanographic teams turn continuous imagery into useful biological observations during a survey—and into reproducible quantitative data afterward. It is built especially for shadowgraph imagery from the <a href="https://bellamare-us.com/isiis-dpi/" rel="noopener noreferrer">ISIIS-DPI family of plankton cameras</a>, drawing on the <a href="/approach/">field and analytical experience of the scientists, instrument developers, and operators behind these instruments and their deployment systems</a>. By combining <a href="/software/">real-time insight with high-throughput processing and review</a>, Pelagia supports programs working at scales where manual inspection alone is no longer practical.</p>
 
 ## Real-Time Plankton Identification
 
