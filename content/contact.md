@@ -16,6 +16,12 @@ description: "Meet the people behind Pelagia and start a conversation about pela
   <div class="contact-routes">
     <article class="contact-route software-route">
       <p class="contact-route-label">Software &amp; analysis</p>
+      <div class="contact-route-logo">
+        <a class="partner-lockup partner-lockup-icy" href="https://icyseascolab.io/" rel="noopener noreferrer">
+          {{< responsive-image src="images/partners/icy-seas-mark.png" alt="" widths="64,96,160" sizes="4rem" quality="90" >}}
+          <span class="partner-lockup-name">Icy Seas Co-Laboratory</span>
+        </a>
+      </div>
       <h3>Pelagia and Icy Seas</h3>
       <p>For processing workflows, scientific software, demonstrations, collaborations, or support, contact Icy Seas Co-Laboratory.</p>
       <div class="contact-route-actions">
@@ -25,6 +31,11 @@ description: "Meet the people behind Pelagia and start a conversation about pela
     </article>
     <article class="contact-route instrument-route">
       <p class="contact-route-label">Instruments &amp; deployment</p>
+      <div class="contact-route-logo">
+        <a class="partner-lockup partner-lockup-bellamare" href="https://bellamare-us.com/" rel="noopener noreferrer">
+          <img src="/brand/bellamare-logo-primary.svg" alt="Bellamare" width="250" height="59" loading="lazy" decoding="async">
+        </a>
+      </div>
       <h3>ISIIS-DPI and Bellamare</h3>
       <p>Interested in ISIIS-DPI plankton cameras, towed vehicles, instrument hubs, or deployment support? Bellamare designs and supports the imaging and deployment systems Pelagia was built to serve.</p>
       <div class="contact-route-actions">

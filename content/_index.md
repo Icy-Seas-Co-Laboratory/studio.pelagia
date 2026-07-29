@@ -84,15 +84,26 @@ description: "Pelagia is a real-time pelagic image processing suite shaped by fi
     </div>
     <div class="pelagia-metrics">
       <div class="pelagia-metric">
-        <strong>Icy Seas</strong>
+        <div class="pelagia-metric-heading">
+          <a class="partner-lockup partner-lockup-icy" href="https://icyseascolab.io/" rel="noopener noreferrer">
+            {{< responsive-image src="images/partners/icy-seas-mark.png" alt="" widths="64,96,160" sizes="3rem" quality="90" >}}
+            <span class="partner-lockup-name">Icy Seas Co-Laboratory</span>
+          </a>
+        </div>
         <span>Scientific computing, software development, and field experience</span>
       </div>
       <div class="pelagia-metric">
-        <strong>Bellamare</strong>
+        <div class="pelagia-metric-heading">
+          <a class="partner-lockup partner-lockup-bellamare" href="https://bellamare-us.com/" rel="noopener noreferrer">
+            <img src="/brand/bellamare-logo-primary.svg" alt="Bellamare" width="250" height="59" loading="lazy" decoding="async">
+          </a>
+        </div>
         <span>Imaging systems, subsea engineering, and development support</span>
       </div>
       <div class="pelagia-metric">
-        <strong>Research</strong>
+        <div class="pelagia-metric-heading">
+          <strong>Research</strong>
+        </div>
         <span>Plankton ecology, imaging methods, and research workflows</span>
       </div>
     </div>

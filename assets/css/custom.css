@@ -382,7 +382,7 @@ section.prose > div.min-h-0.min-w-0.max-w-prose.grow {
 .pelagia-metric strong {
   display: block;
   color: #17201b;
-  font-size: 1.94rem;
+  font-size: 1.55rem;
   line-height: 1;
 }
 
@@ -392,6 +392,84 @@ section.prose > div.min-h-0.min-w-0.max-w-prose.grow {
   color: #60746c;
   font-size: 1.15rem;
   line-height: 1.4;
+}
+
+.pelagia-metric-heading {
+  display: flex;
+  height: 3.4rem;
+  align-items: center;
+}
+
+.partner-lockup {
+  display: inline-flex;
+  gap: 0.65rem;
+  align-items: center;
+  max-width: 100%;
+  color: #12354d;
+  text-decoration: none;
+}
+
+.partner-lockup:hover {
+  color: #1c7e99;
+}
+
+.partner-lockup:focus-visible {
+  border-radius: 0.2rem;
+  outline: 3px solid rgba(28, 126, 153, 0.32);
+  outline-offset: 4px;
+}
+
+.partner-lockup-icy .responsive-picture {
+  width: 3rem;
+  flex: 0 0 auto;
+}
+
+.partner-lockup-icy .responsive-picture img {
+  width: 100%;
+  height: auto;
+}
+
+.partner-lockup-name {
+  color: currentColor;
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.partner-lockup-bellamare {
+  width: min(100%, 11rem);
+}
+
+.partner-lockup-bellamare img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pelagia-metric .partner-lockup {
+  min-height: 0;
+  margin: 0;
+}
+
+.pelagia-metric .partner-lockup-icy {
+  gap: 0.5rem;
+}
+
+.pelagia-metric .partner-lockup-icy .responsive-picture {
+  width: 2.8rem;
+}
+
+.pelagia-metric .partner-lockup-name {
+  display: inline;
+  margin: 0;
+  color: currentColor;
+  font-size: 1.02rem;
+  line-height: 1.1;
+}
+
+.pelagia-metric .partner-lockup-bellamare {
+  width: min(100%, 11.5rem);
+  max-height: 3.4rem;
 }
 
 .pelagia-cta {
@@ -488,6 +566,25 @@ section.prose > div.min-h-0.min-w-0.max-w-prose.grow {
 
 .contact-route.instrument-route {
   border-top-color: #1c7e99;
+}
+
+.contact-route-logo {
+  display: flex;
+  min-height: 4.6rem;
+  align-items: center;
+  margin: 0.1rem 0 1.15rem;
+}
+
+.contact-route-logo .partner-lockup-icy .responsive-picture {
+  width: 4rem;
+}
+
+.contact-route-logo .partner-lockup-name {
+  font-size: clamp(1.35rem, 2.6vw, 1.8rem);
+}
+
+.contact-route-logo .partner-lockup-bellamare {
+  width: min(100%, 16.5rem);
 }
 
 .contact-route-label,
