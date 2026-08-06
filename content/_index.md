@@ -11,7 +11,7 @@ description: "Pelagia is a real-time pelagic image processing suite shaped by fi
       <p class="lead">Pelagia brings real-time plankton identification, high-throughput image processing, and interactive scientific review into one integrated suite. It is being built from direct experience operating imaging systems at sea, processing their data at scale, and working with scientists to turn imagery into defensible observations.</p>
       <div class="pelagia-actions">
         <a class="pelagia-button primary" href="/approach/">Explore the approach</a>
-        <a class="pelagia-button secondary" href="https://demo.pelagia.studio/?server=https%3A%2F%2Fdemoapi.pelagia.studio&username=demo&password=demo" rel="noopener noreferrer">Try the demo</a>
+        <a class="pelagia-button secondary" href="/demo/">Try the demo</a>
       </div>
     </div>
     <div class="pelagia-visual" aria-hidden="true">

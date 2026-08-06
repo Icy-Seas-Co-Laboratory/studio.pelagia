@@ -35,7 +35,7 @@ Pelagia uses a Python backend with a FastAPI service layer and a browser-based r
 
 ## Try Pelagia
 
-Explore the complete workflow in the hosted [Pelagia demo](https://demo.pelagia.studio/?server=https%3A%2F%2Fdemoapi.pelagia.studio&username=demo&password=demo). The Pelagia processing engine is also available on [GitHub](https://github.com/Icy-Seas-Co-Laboratory/Pelagia) for teams building reproducible and extensible analysis workflows.
+Start with the [Pelagia demo guide](/demo/) for context about the shared environment, current hardware, and access level before opening the hosted instance. The Pelagia processing engine is also available on [GitHub](https://github.com/Icy-Seas-Co-Laboratory/Pelagia) for teams building reproducible and extensible analysis workflows.
 
 ## Built For Pelagic Data
 

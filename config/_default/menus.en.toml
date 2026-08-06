@@ -37,11 +37,8 @@
 
 [[main]]
   name = "Demo"
-  url = "https://demo.pelagia.studio/?server=https%3A%2F%2Fdemoapi.pelagia.studio&username=demo&password=demo"
+  pageRef = "demo"
   weight = 50
-  [main.params]
-    rel = "noopener noreferrer"
-    target = "_blank"
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
@@ -69,11 +66,8 @@
 
 [[footer]]
   name = "Demo"
-  url = "https://demo.pelagia.studio/?server=https%3A%2F%2Fdemoapi.pelagia.studio&username=demo&password=demo"
+  pageRef = "demo"
   weight = 40
-  [footer.params]
-    rel = "noopener noreferrer"
-    target = "_blank"
 
 [[footer]]
   name = "Source"
